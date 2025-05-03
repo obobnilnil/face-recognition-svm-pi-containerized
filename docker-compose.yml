@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  face-app:
+    build: .
+    volumes:
+      - ./face_recognition_model.joblib:/home/jaidog/camera_pi/MLproject/face_recognition_model.joblib
+    ports:
+      - "8000:8000"
+    devices:
+      - "/dev/video0:/dev/video0"

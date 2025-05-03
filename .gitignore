@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
+!face_recognition_model.joblib  # ← ลบออกถ้าต้อง ignore ด้วย
+output_recorded.mp4
+.snapshots/
+face_recognition_model.joblib   # ← เพิ่มบรรทัดนี้เพื่อ ignore ไฟล์ model
