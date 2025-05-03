@@ -185,9 +185,9 @@ class CameraApp:
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (color), 2)
 
                 # out.write(frame)
-                cv2.imshow("Face Detection", frame)
-                if cv2.waitKey(1) == ord('q'):
-                    break
+                # cv2.imshow("Face Detection", frame)
+                # if cv2.waitKey(1) == ord('q'):
+                #    break
 
         finally:
             self.cap.release()
